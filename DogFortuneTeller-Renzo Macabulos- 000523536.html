@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Dog ForturneTellerStyle.css"/>
+    <script src="constants.js"></script>
+    <script src ="DogFortuneTellerJavaScript.js"></script>
+    <title>Dog Fortune Teller</title>
+</head>
+<body>
+
+    <header>
+        <h1>Adopt A Dog And We Will Reveal A Deep Truth About You</h1>
+        <div class="yellow-circles">
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        <section class="question-block">
+            <h2>Choose a dog companion:</h2>
+            <div class="choice-grid">
+                <div class="choice" data-question-id="one" data-choice-id="burger" onclick="selectChoice(this)">
+                    <img src="unchecked.jpg" class="checkbox">
+                    <img src="germ.jpg" class="choice-img">
+                </div>
+                <div class="choice" data-question-id="one" data-choice-id="happy" onclick="selectChoice(this)">
+                    <img src="unchecked.jpg" class="checkbox">
+                    <img src="lab.jpg" class="choice-img">
+                </div>
+                <div class="choice" data-question-id="one" data-choice-id="sleeping" onclick="selectChoice(this)">
+                    <img src="unchecked.jpg" class="checkbox">
+                    <img src="Chicho.jpg" class="choice-img">
+                </div>
+            </div>
+        </section>
+        <section class="question-block">
+            <h2>Choose a Dog Toy</h2>
+            <div class="choice-grid">
+                <div class="choice" data-question-id="two" data-choice-id="burger" onclick="selectChoice(this)">
+                    <img src="unchecked.jpg" class="checkbox">
+                    <img src="dogbone.jpg" class="choice-img">
+                </div>
+                <div class="choice" data-question-id="two" data-choice-id="happy" onclick="selectChoice(this)">
+                    <img src="unchecked.jpg" class="checkbox">
+                    <img src="dogball.jpg" class="choice-img">
+                </div>
+                <div class="choice" data-question-id="two" data-choice-id="sleeping" onclick="selectChoice(this)">
+                    <img src="unchecked.jpg" class="checkbox">
+                    <img src="dogfrisbee.jpeg" class="choice-img">
+                </div>
+            </div>
+        </section>
+        <section class="question-block">
+            <h3>Choose a Dog Bed</h3>
+            <div class="choice-grid">
+                <div class="choice" data-question-id="three" data-choice-id="burger" onclick="selectChoice(this)">
+                        <img src="unchecked.jpg" class="checkbox">
+                        <img src="pinkdogbed.jpg" class="choice-img">
+                    </div>
+                    <div class="choice" data-question-id="three" data-choice-id="happy" onclick="selectChoice(this)">
+                        <img src="unchecked.jpg" class="checkbox">
+                        <img src="woodbed.jpg" class="choice-img">
+                    </div>
+                    <div class="choice" data-question-id="three" data-choice-id="sleeping" onclick="selectChoice(this)">
+                        <img src="unchecked.jpg" class="checkbox">
+                        <img src="pawbed.jpg" class="choice-img">
+                    </div>
+            </div>
+        </section>
+        <section id="results" class="results-hidden">
+            <h3>Your Dog Fortune:</h3>
+            <p id="fortune-text"></p>
+            <button id="restart-button" type="button" onclick="restartQuiz()">Restart Quiz</button>
+
+        </section>
+    </main>
+
+</body>
+</html>
